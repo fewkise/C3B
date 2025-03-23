@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    cursor: none;
 }
 body {
     background-color: #19181a;
@@ -116,3 +116,176 @@ nav {
         transform: translate(-50%,-50%) rotate(-45deg);
     }
 }
+.container {
+    width: 70vw;
+    position: relative;
+    display: flex;
+    height: 75vh;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .forbtn {
+        display: flex;
+        flex-direction: column;
+    }
+    .button{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 255, 255);
+        transition: 0.7s;
+        font-size: 35px;
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+        border-radius: 70%;
+        box-shadow:  rgba(251, 168, 238, 0.884) 0px 30px 60px -12px inset, rgb(255, 99, 99) 0px 18px 36px -18px inset;
+        clip-path: polygon(0 50%, 0 0, 53% 0, 100% 0, 100% 51%, 100% 100%, 53% 100%, 0 100%);
+    } 
+    .button:hover {
+        clip-path: polygon(0 50%, 41% 40%, 53% 0, 63% 40%, 100% 51%, 63% 64%, 53% 100%, 40% 61%);
+    }
+}
+.block {
+    position: absolute;
+    top: 100px;
+    left: 900px;
+    width: 700px;
+    height: 500px;
+    transition: 1s;
+    background-color: black;
+    clip-path: polygon(277px 16px,260px 42px,238px 43px,226px 21px,193px 6px,136px 0px,152px 50px,184px 79px,116px 154px,160px 138px,138px 178px,177px 172px,159px 234px,166px 271px,170px 308px,152px 391px,137px 420px,197px 417px,195px 388px,213px 337px,217px 380px,218px 418px,264px 419px,251px 393px,286px 391px,272px 419px,288px 419px,368px 417px,419px 369px,451px 283px,449px 190px,481px 176px,549px 184px,581px 213px,631px 208px,618px 115px,565px 60px,523px 42px,415px 27px,350px 80px,359px 224px,382px 302px,355px 381px,369px 315px,356px 242px,313px 167px,341px 182px,327px 136px,365px 145px,306px 78px,337px 53px,351px 26px,358px 5px,308px 7px);
+
+}
+.button:nth-child(1):hover {
+    filter: blur(40px);
+    background-color: #f1ebe7;
+}
+.button:nth-child(2):hover {
+    filter: blur(40px);
+    background-color: #f1ebe7;
+}
+.button:nth-child(3):hover {
+    filter: blur(40px);
+    background-color: #f1ebe7;
+}
+.button:nth-child(1):hover ~ .block {
+    clip-path: polygon(277px 16px,260px 42px,238px 43px,226px 21px,193px 6px,136px 0px,152px 50px,184px 79px,116px 154px,160px 138px,138px 178px,177px 172px,159px 234px,166px 271px,170px 308px,152px 391px,137px 420px,197px 417px,195px 388px,213px 337px,217px 380px,218px 418px,264px 419px,251px 393px,286px 391px,272px 419px,288px 419px,368px 417px,419px 369px,451px 283px,449px 190px,481px 176px,524px 198px,546px 254px,596px 221px,583px 121px,546px 59px,473px 25px,387px 17px,328px 77px,359px 224px,382px 302px,355px 381px,369px 315px,356px 242px,313px 167px,341px 182px,327px 136px,365px 145px,306px 78px,337px 53px,351px 26px,358px 5px,308px 7px);
+    filter: blur(40px);
+    background-color: rgb(255, 215, 222);
+}
+.button:nth-child(2):hover ~ .block {
+    filter: blur(40px);
+    background-color: rgb(164, 240, 255);
+    clip-path: polygon(273px 16px,260px 42px,238px 43px,234px 22px,220px 2px,198px 7px,190px 37px,184px 79px,159px 102px,93px 145px,125px 192px,192px 181px,174px 237px,179px 274px,180px 314px,156px 369px,148px 407px,185px 407px,188px 361px,213px 337px,217px 380px,218px 418px,264px 419px,251px 393px,286px 391px,272px 419px,288px 419px,368px 417px,419px 369px,451px 283px,465px 236px,490px 201px,517px 260px,582px 283px,630px 234px,581px 197px,584px 85px,521px 14px,425px 8px,373px 87px,359px 224px,382px 302px,355px 381px,369px 315px,356px 242px,303px 164px,335px 159px,299px 131px,333px 132px,306px 78px,323px 39px,330px 18px,327px 4px,303px 5px);
+}
+.button:nth-child(3):hover ~ .block {
+    filter: blur(40px);
+    background-color: rgb(255, 220, 164);
+    clip-path: polygon(277px 16px,260px 42px,238px 43px,226px 21px,193px 6px,136px 0px,152px 50px,184px 79px,116px 154px,160px 138px,138px 178px,177px 172px,159px 234px,166px 271px,170px 308px,145px 345px,143px 392px,183px 394px,173px 362px,213px 337px,217px 380px,218px 418px,264px 419px,251px 393px,286px 391px,272px 419px,288px 419px,368px 417px,419px 369px,451px 283px,449px 190px,481px 176px,524px 198px,546px 254px,596px 221px,583px 121px,546px 59px,473px 25px,387px 17px,328px 77px,359px 224px,382px 302px,355px 381px,369px 315px,356px 242px,313px 167px,341px 182px,327px 136px,365px 145px,306px 78px,337px 53px,351px 26px,358px 5px,308px 7px);
+}
+#iconYoutube {
+    width: 1vw;
+}
+.footerAll {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    footer {
+        display: flex;
+        width: auto;
+        column-gap: 13vw;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        ul:nth-child(1){
+            li {
+                flex-direction: column;
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            row-gap: 1vw;
+            width: auto;
+            align-self: flex-start;
+            p {
+                color: #f1ebe7;
+            }
+            a {
+                display: flex;
+                align-items: center; 
+                text-decoration: none; 
+                width: auto;
+                column-gap: 0.3vw;
+                p {
+                    color: #f1ebe7;
+                }
+            }
+            li {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                width:auto;
+            }
+        }
+    }
+}
+.list {
+    display: flex;
+    list-style: none;
+  }
+  
+  .item {
+    font-size: 2rem;
+    margin: 0 1em;
+    font-family: "Poppins";
+  }
+  
+  a {
+    cursor: none;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #f7f7f7;
+  }
+  
+  .cursor {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  
+  .outer {
+    border: 1px solid #f7f7f770;
+  }
+  
+  .inner {
+    background: #f7f7f720;
+    transition: 250ms ease-out;
+  }
+  
+  .cursor.hover {
+    transform: translate(-50%, -50%) scale(2);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .inner.hover {
+    background: #f7f7f7;
+    mix-blend-mode:difference;
+  }
